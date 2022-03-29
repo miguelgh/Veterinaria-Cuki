@@ -37,9 +37,18 @@ header {
 header h1{
     width: 90%;
     padding: 1rem;
-    padding-left: 0rem;
     color: #fff;
 }
+header h1 a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+header h1 a:hover{
+    color:rgb(56, 56, 56);
+}
+
 /**FIN HEADER**/
 
 /**NAV**/
@@ -248,3 +257,28 @@ footer p{
     text-align: right;
 }
 /**FIN FOOTER**/
+
+@media (max-width: 800px)  {
+    #servicios article{
+        margin:0 auto;
+        margin-bottom: 2rem;
+        float: none;
+    }
+    .contacto{
+        width: 100%;
+        float: left;
+    }
+    .direccion{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    nav ul{
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 8px;
+        float: none;
+     }
+}
